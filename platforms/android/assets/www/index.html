@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        
+        <meta name="viewport" content="width=device-width" />
+        <meta name="description" content="9E training client application by Harold Villacorte.">
+	    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+	    <link rel="stylesheet" href="stylesheets/app.css" />
+	    <link rel="stylesheet" href="stylesheets/custom.css" />
+	    <script src="javascripts/foundation3/modernizr.foundation.js"></script>
+        
+        <title>9E Training</title>
+    </head>
+    
+    <body>        
+        <nav class="top-bar" id="top-bar">
+	        <ul>
+	          <!-- Title Area -->
+	          <li class="name">
+	            <h1 id="logo">
+	              <a href="index.html" title="Enadeavor Training home page.">
+	                9E Training
+	              </a>
+	            </h1>
+	          </li>
+	          <li class="toggle-topbar" id="toggle-topbar"><a href="#"></a></li>
+	        </ul>
+	
+	        <section>
+	          <!-- Left Nav Section -->
+	          <ul class="left">
+	              <li class="divider"></li>
+	              <li class="has-dropdown">
+	                  <a href="#">Study</a>
+	                  <ul id="study-links" class="dropdown">
+	                      <li class="divider"></li>
+	                  </ul>
+	              </li>
+	              <li class="divider"></li>
+	              <li>
+	                <a href="pages/bookmarked.html" class="marked-link">
+	                    Bookmarked
+	                </a>
+	              </li>
+	              <li class="divider"></li>
+	          </ul>
+	
+	          <!-- Right Nav Section -->
+	          <ul class="right">
+	            <li class="divider hide-for-small hide-for-medium"></li>
+	            <li>
+	                <a href="pages/settings.html" class="settings-link">
+	                    Settings
+	                </a>
+	            </li>
+	          </ul>
+	        </section>
+	    </nav>
+	
+	    <div id="content-wrapper" class="row">
+	        <section id="ajax-content" class="columns twelve">
+	            <div id="messages"></div>
+	            <p><a class="button large settings-link" id="settings-front" href="pages/settings.html">Settings</a></p>
+	        </section>
+	    </div>
+	
+		<div class="row">
+			<footer class="columns twelve">
+			    <hr>
+			    <p>&copy; 2013 Harold Villacorte</p>
+			</footer>
+    	</div>
+	
+	    <div id="sync-modal" class="reveal-modal [xlarge]">
+	        <h2>Data was successfully synchronized.</h2>
+	        <p class="lead">The app will need to be refreshed.</p>
+	        <p><button class="button success large" id="sync-refresh-button">Refresh Now</button></p>
+	    </div>
+        
+        <!-- PHONEGAP SCRIPTS -->
+        <script type="text/javascript" src="phonegap.js"></script>
+        
+        <!-- LAUGHING HOST SCRIPTS -->
+        <script src="javascripts/foundation3/jquery.js"></script>
+	    <script src="javascripts/foundation3/foundation.min.js"></script>
+	    <script src="javascripts/functions.js"></script>
+	    <script src="javascripts/9etraining-ajax.js"></script>
+	    <script src="javascripts/main.js"></script>
+	    <script src="javascripts/foundation3/app.js"></script>        
+    </body>
+</html>
